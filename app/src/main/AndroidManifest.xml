@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.rahulsapplication.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.rahulsapplication.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity android:exported="true"
+            android:name="com.rahulsapplication.app.modules.appnavigation.ui.AppNavigationActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rahulsapplication.app.modules.incomingcallinthemiddleofanothercall.ui.IncomingCallInTheMiddleOfAnotherCallActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.rahulsapplication.app.modules.incomingcallnotification3.ui.IncomingCallNotification3Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.rahulsapplication.app.modules.incomingcallnotification.ui.IncomingCallNotificationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.rahulsapplication.app.modules.incomingcallnotificationmorethanoneprofile.ui.IncomingCallNotificationMoreThanOneProfileActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.rahulsapplication.app.modules.incominggroupcallnotification.ui.IncomingGroupCallNotificationActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

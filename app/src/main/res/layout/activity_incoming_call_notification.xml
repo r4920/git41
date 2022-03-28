@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="incomingCallNotificationVM" type="com.rahulsapplication.app.modules.incomingcallnotification.data.viewmodel.IncomingCallNotificationVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearGroup130"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearGroup84"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_8pxh"
+            android:layout_marginStart="@dimen/_8pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12pxv"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:id="@+id/linearGroup83"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/_20pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <LinearLayout android:id="@+id/linearGroup132"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.63"
+                        android:layout_width="0dp" android:orientation="horizontal">
+                        <FrameLayout android:id="@+id/frameGroup122"
+                            android:layout_height="@dimen/_46pxv" android:layout_width="@dimen/_45pxh">
+                            <ImageView android:id="@+id/imageAvatar"
+                                android:layout_gravity="top|center"
+                                android:layout_height="@dimen/_44pxh"
+                                android:layout_marginBottom="@dimen/_10pxv"
+                                android:layout_marginEnd="@dimen/_1pxh"
+                                android:layout_width="@dimen/_44pxh"
+                                android:scaleType="fitXY"
+                                circular="@{true}"
+                                imageRes="@{@drawable/img_avatar_9}" tools:src="@drawable/img_avatar_9"/>
+                            <ImageView
+                                android:id="@+id/imageTelegramlogo"
+                                android:layout_gravity="bottom|end"
+                                android:layout_height="@dimen/_17pxh"
+                                android:layout_marginStart="@dimen/_10pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="@dimen/_17pxh"
+                                android:scaleType="fitXY"
+                                circular="@{true}"
+                                imageRes="@{@drawable/img_telegramlogo}" tools:src="@drawable/img_telegramlogo"/>
+                        </FrameLayout>
+                        <LinearLayout android:gravity="start"
+                            android:id="@+id/linearGroup81"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_6pxv"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_4pxv"
+                            android:layout_weight="0.7"
+                            android:layout_width="0dp" android:orientation="vertical">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtEmmettBrown"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:singleLine="true"
+                                android:text="@{incomingCallNotificationVM.incomingCallNotificationModel.txtEmmettBrown}"
+                                style="@style/txtRobotomedium16" tools:text="@string/lbl_emmett_brown"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtTelegramVoice"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_3pxh"
+                                android:layout_marginTop="@dimen/_3pxv"
+                                android:layout_width="match_parent"
+                                android:singleLine="true"
+                                android:text="@{incomingCallNotificationVM.incomingCallNotificationModel.txtTelegramVoice}"
+                                style="@style/txtRobotoregular12" tools:text="@string/msg_telegram_voice"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/linearGroup133"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_marginStart="@dimen/_57pxh"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_weight="0.37"
+                        android:layout_width="0dp" android:orientation="horizontal">
+                        <ImageView android:id="@+id/imageFrame7"
+                            android:layout_height="@dimen/_40pxh"
+                            android:layout_width="@dimen/_40pxh"
+                            android:scaleType="fitXY" android:src="@drawable/img_frame7"/>
+                        <ImageView android:id="@+id/imageFrame6"
+                            android:layout_height="@dimen/_40pxh"
+                            android:layout_marginStart="@dimen/_15pxh"
+                            android:layout_width="@dimen/_40pxh"
+                            android:scaleType="fitXY" android:src="@drawable/img_frame6"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <ImageView android:id="@+id/imageSwipeUpWide"
+                android:layout_height="@dimen/_24pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY" android:src="@drawable/img_swipeupwide"/>
+        </LinearLayout>
+        <androidx.core.widget.NestedScrollView
+            android:clipToPadding="false" android:fillViewport="true"
+            android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="match_parent"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <FrameLayout android:id="@+id/frameGroup118"
+                android:layout_height="@dimen/_763pxv" android:layout_width="match_parent">
+                <FrameLayout android:id="@+id/frameGroup120"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_54pxv"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_width="match_parent" style="@style/groupStylebluegray_500cornerRadius">
+                    <ImageView android:id="@+id/imageLeft"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_54pxh"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_width="@dimen/_137pxh"
+                        android:scaleType="fitXY" android:src="@drawable/img_left_1"/>
+                    <LinearLayout android:id="@+id/linearGroup78"
+                        android:layout_gravity="bottom|center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_104pxh"
+                        android:layout_marginStart="@dimen/_104pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent" android:orientation="vertical">
+                        <LinearLayout android:id="@+id/linearGroup77"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtCHATS"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{incomingCallNotificationVM.incomingCallNotificationModel.txtCHATS}"
+                                style="@style/txtRobotomedium14" tools:text="@string/lbl_chats"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtCALLS"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{incomingCallNotificationVM.incomingCallNotificationModel.txtCALLS}"
+                                style="@style/txtRobotomedium14_1" tools:text="@string/lbl_calls"/>
+                        </LinearLayout>
+                        <View android:background="@color/white_A700"
+                            android:id="@+id/lineRectangle5"
+                            android:layout_height="@dimen/_2pxv"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_15pxv" android:layout_width="@dimen/_76pxh"/>
+                    </LinearLayout>
+                </FrameLayout>
+                <LinearLayout android:id="@+id/linearChatList"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent" android:orientation="vertical">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerGroup127"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:nestedScrollingEnabled="false"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        itemSpace="@{@dimen/_1pxh}" tools:itemCount="3" tools:listitem="@layout/row_incoming_call_notification1"/>
+                    <LinearLayout android:gravity="end"
+                        android:id="@+id/linearGroup93"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <ImageView android:id="@+id/imageAvatar1"
+                            android:layout_height="@dimen/_57pxh"
+                            android:layout_marginBottom="@dimen/_12pxv"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_11pxv"
+                            android:layout_width="@dimen/_57pxh"
+                            android:scaleType="fitXY" circular="@{true}"
+                            imageRes="@{@drawable/img_avatar_3}" tools:src="@drawable/img_avatar_3"/>
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:id="@+id/linearGroup92"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_6pxh"
+                            android:layout_marginTop="@dimen/_8pxv"
+                            android:layout_weight="0.83"
+                            android:layout_width="0dp" android:orientation="vertical">
+                            <LinearLayout
+                                android:id="@+id/linearService"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_13pxh"
+                                android:layout_marginStart="@dimen/_6pxh"
+                                android:layout_width="match_parent" android:orientation="horizontal">
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtJaneParker"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_1pxv"
+                                    android:layout_weight="0.66"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{incomingCallNotificationVM.incomingCallNotificationModel.txtJaneParker}"
+                                    style="@style/txtRobotomedium16" tools:text="@string/lbl_jane_parker"/>
+                                <LinearLayout
+                                    android:id="@+id/linearGroup134"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_137pxh"
+                                    android:layout_marginTop="@dimen/_2pxv"
+                                    android:layout_weight="0.34"
+                                    android:layout_width="0dp" android:orientation="horizontal">
+                                    <ImageView
+                                    android:id="@+id/imageLineCheckIc"
+                                    android:layout_height="@dimen/_18pxh"
+                                    android:layout_width="@dimen/_18pxh"
+                                    android:scaleType="fitXY" android:src="@drawable/img_linecheckic_1"/>
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txtWed"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_1pxv"
+                                    android:layout_marginStart="@dimen/_1pxh"
+                                    android:layout_marginTop="@dimen/_1pxv"
+                                    android:layout_weight="0.59"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{incomingCallNotificationVM.incomingCallNotificationModel.txtWed}"
+                                    style="@style/txtRobotoregular13" tools:text="@string/lbl_wed"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <EditText android:ellipsize="end"
+                                android:hint="@string/lbl_okay"
+                                android:id="@+id/etOkay"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4pxv"
+                                android:layout_width="match_parent"
+                                android:paddingBottom="@dimen/_31pxv"
+                                android:paddingStart="@dimen/_6pxh"
+                                android:paddingTop="@dimen/_1pxv"
+                                android:singleLine="true"
+                                android:text="@={incomingCallNotificationVM.incomingCallNotificationModel.etOkayValue}"
+                                android:textColorHint="@color/bluegray_400" style="@style/etRobotoregular15"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="end"
+                        android:id="@+id/linearGroup95"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <ImageView android:id="@+id/imageAvatar2"
+                            android:layout_height="@dimen/_57pxh"
+                            android:layout_marginBottom="@dimen/_12pxv"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_11pxv"
+                            android:layout_width="@dimen/_57pxh"
+                            android:scaleType="fitXY" circular="@{true}"
+                            imageRes="@{@drawable/img_avatar_4}" tools:src="@drawable/img_avatar_4"/>
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:id="@+id/linearGroup94"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_6pxh"
+                            android:layout_marginTop="@dimen/_8pxv"
+                            android:layout_weight="0.83"
+                            android:layout_width="0dp" android:orientation="vertical">
+                            <LinearLayout
+                                android:id="@+id/linearService1"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_13pxh"
+                                android:layout_marginStart="@dimen/_6pxh"
+                                android:layout_width="match_parent" android:orientation="horizontal">
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtGoldieWilson"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_1pxv"
+                                    android:layout_weight="0.69"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{incomingCallNotificationVM.incomingCallNotificationModel.txtGoldieWilson}"
+                                    style="@style/txtRobotomedium16" tools:text="@string/lbl_goldie_wilson"/>
+                                <LinearLayout
+                                    android:id="@+id/linearGroup135"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_124pxh"
+                                    android:layout_marginTop="@dimen/_2pxv"
+                                    android:layout_weight="0.31"
+                                    android:layout_width="0dp" android:orientation="horizontal">
+                                    <ImageView
+                                    android:id="@+id/imageLineCheckIc1"
+                                    android:layout_height="@dimen/_18pxh"
+                                    android:layout_width="@dimen/_18pxh"
+                                    android:scaleType="fitXY" android:src="@drawable/img_linecheckic_1"/>
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txtWed1"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_1pxv"
+                                    android:layout_marginStart="@dimen/_1pxh"
+                                    android:layout_marginTop="@dimen/_1pxv"
+                                    android:layout_weight="0.59"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{incomingCallNotificationVM.incomingCallNotificationModel.txtWed1}"
+                                    style="@style/txtRobotoregular13" tools:text="@string/lbl_wed"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <EditText android:ellipsize="end"
+                                android:hint="@string/msg_i_will_vote_for"
+                                android:id="@+id/etIWillVoteFor"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4pxv"
+                                android:layout_width="match_parent"
+                                android:paddingBottom="@dimen/_31pxv"
+                                android:paddingStart="@dimen/_6pxh"
+                                android:paddingTop="@dimen/_1pxv"
+                                android:singleLine="true"
+                                android:text="@={incomingCallNotificationVM.incomingCallNotificationModel.etIWillVoteForValue}"
+                                android:textColorHint="@color/bluegray_400" style="@style/etRobotoregular15"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="end"
+                        android:id="@+id/linearGroup97"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <ImageView android:id="@+id/imageAvatar3"
+                            android:layout_height="@dimen/_57pxh"
+                            android:layout_marginBottom="@dimen/_12pxv"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_11pxv"
+                            android:layout_width="@dimen/_57pxh"
+                            android:scaleType="fitXY" circular="@{true}"
+                            imageRes="@{@drawable/img_avatar_5}" tools:src="@drawable/img_avatar_5"/>
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:id="@+id/linearGroup96"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_6pxh"
+                            android:layout_marginTop="@dimen/_8pxv"
+                            android:layout_weight="0.83"
+                            android:layout_width="0dp" android:orientation="vertical">
+                            <LinearLayout
+                                android:id="@+id/linearService2"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_13pxh"
+                                android:layout_marginStart="@dimen/_6pxh"
+                                android:layout_width="match_parent" android:orientation="horizontal">
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtLorraineBaines"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_1pxv"
+                                    android:layout_weight="0.64"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{incomingCallNotificationVM.incomingCallNotificationModel.txtLorraineBaines}"
+                                    style="@style/txtRobotomedium16" tools:text="@string/lbl_lorraine_baines"/>
+                                <LinearLayout
+                                    android:id="@+id/linearGroup136"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_94pxh"
+                                    android:layout_marginTop="@dimen/_2pxv"
+                                    android:layout_weight="0.36"
+                                    android:layout_width="0dp" android:orientation="horizontal">
+                                    <ImageView
+                                    android:id="@+id/imageLineReadIco"
+                                    android:layout_height="@dimen/_18pxh"
+                                    android:layout_width="@dimen/_18pxh"
+                                    android:scaleType="fitXY" android:src="@drawable/img_linereadico_1"/>
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txtMay02"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_1pxv"
+                                    android:layout_marginStart="@dimen/_1pxh"
+                                    android:layout_marginTop="@dimen/_1pxv"
+                                    android:layout_weight="0.7"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{incomingCallNotificationVM.incomingCallNotificationModel.txtMay02}"
+                                    style="@style/txtRobotoregular13" tools:text="@string/lbl_may_02"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <EditText android:ellipsize="end"
+                                android:hint="@string/msg_will_it_ever_ha"
+                                android:id="@+id/etWillItEverHa"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4pxv"
+                                android:layout_width="match_parent"
+                                android:paddingBottom="@dimen/_31pxv"
+                                android:paddingStart="@dimen/_6pxh"
+                                android:paddingTop="@dimen/_1pxv"
+                                android:singleLine="true"
+                                android:text="@={incomingCallNotificationVM.incomingCallNotificationModel.etWillItEverHaValue}"
+                                android:textColorHint="@color/bluegray_400" style="@style/etRobotoregular15"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerGroup128"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:nestedScrollingEnabled="false"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        itemSpace="@{@dimen/_1pxh}" tools:itemCount="2" tools:listitem="@layout/row_incoming_call_notification2"/>
+                    <FrameLayout android:id="@+id/frameGroup124"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_56pxv"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_9pxv" android:layout_width="@dimen/_350pxh">
+                        <FrameLayout android:id="@+id/frameGroup126"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_56pxv" android:layout_width="@dimen/_350pxh">
+                            <LinearLayout
+                                android:id="@+id/linearGroup116"
+                                android:layout_gravity="top|start"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_10pxv"
+                                android:layout_width="match_parent" android:orientation="vertical">
+                                <LinearLayout android:gravity="start"
+                                    android:id="@+id/linearGroup100"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent" android:orientation="horizontal">
+                                    <ImageView
+                                    android:id="@+id/imageAvatar4"
+                                    android:layout_height="@dimen/_46pxh"
+                                    android:layout_marginTop="@dimen/_2pxv"
+                                    android:layout_width="@dimen/_57pxh"
+                                    android:scaleType="fitXY"
+                                    circular="@{true}"
+                                    imageRes="@{@drawable/img_avatar_8}" tools:src="@drawable/img_avatar_8"/>
+                                    <LinearLayout
+                                    android:gravity="start"
+                                    android:id="@+id/linearLayout"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_7pxv"
+                                    android:layout_marginEnd="@dimen/_94pxh"
+                                    android:layout_marginStart="@dimen/_12pxh"
+                                    android:layout_weight="0.77"
+                                    android:layout_width="0dp" android:orientation="vertical">
+                                    <LinearLayout
+                                    android:gravity="start"
+                                    android:id="@+id/linearTitleLayout"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_width="match_parent" android:orientation="horizontal">
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:id="@+id/txtGeraldStrickla"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.87"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{incomingCallNotificationVM.incomingCallNotificationModel.txtGeraldStrickla}"
+                                    style="@style/txtRobotomedium16" tools:text="@string/msg_gerald_strickla"/>
+                                    <ImageView
+                                    android:id="@+id/imageFilledMuteI"
+                                    android:layout_height="@dimen/_18pxh"
+                                    android:layout_marginStart="@dimen/_4pxh"
+                                    android:layout_width="@dimen/_18pxh"
+                                    android:scaleType="fitXY" android:src="@drawable/img_filledmutei_1"/>
+                                    </LinearLayout>
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:id="@+id/txtJesusDidntT"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_4pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{incomingCallNotificationVM.incomingCallNotificationModel.txtJesusDidntT}"
+                                    style="@style/txtRobotoregular15" tools:text="@string/msg_jesus_didn_t_t"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <View
+                                    android:background="@color/bluegray_100"
+                                    android:id="@+id/lineDivider"
+                                    android:layout_height="@dimen/_1pxv"
+                                    android:layout_marginStart="@dimen/_10pxh"
+                                    android:layout_marginTop="@dimen/_23pxv" android:layout_width="@dimen/_287pxh"/>
+                            </LinearLayout>
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:id="@+id/btn2"
+                                android:layout_gravity="bottom|end"
+                                android:layout_height="@dimen/_24pxh"
+                                android:layout_marginEnd="@dimen/_13pxh"
+                                android:layout_marginStart="@dimen/_13pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="@dimen/_24pxh"
+                                android:paddingBottom="@dimen/_4pxv"
+                                android:paddingEnd="@dimen/_8pxh"
+                                android:paddingStart="@dimen/_8pxh"
+                                android:paddingTop="@dimen/_4pxv"
+                                android:singleLine="true"
+                                android:text="@string/lbl_2"
+                                android:textAllCaps="false"
+                                style="@style/btnSolidRounded_1" tools:text="@string/lbl_2"/>
+                        </FrameLayout>
+                        <LinearLayout android:id="@+id/linearService3"
+                            android:layout_gravity="top|end"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_marginEnd="@dimen/_13pxh"
+                            android:layout_marginStart="@dimen/_13pxh"
+                            android:layout_marginTop="@dimen/_1pxv"
+                            android:layout_width="wrap_content" android:orientation="horizontal">
+                            <ImageView
+                                android:id="@+id/imageLineReadIco1"
+                                android:layout_height="@dimen/_18pxh"
+                                android:layout_width="@dimen/_18pxh"
+                                android:scaleType="fitXY" android:src="@drawable/img_linereadico_1"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtMay3"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_1pxv"
+                                android:layout_marginStart="@dimen/_1pxh"
+                                android:layout_marginTop="@dimen/_1pxv"
+                                android:layout_weight="0.7"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{incomingCallNotificationVM.incomingCallNotificationModel.txtMay3}"
+                                style="@style/txtRobotoregular13" tools:text="@string/lbl_may_02"/>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>
