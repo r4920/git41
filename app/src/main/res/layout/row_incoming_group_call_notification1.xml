@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="incomingGroupCallNotification1RowModel" type="com.rahulsapplication.app.modules.incominggroupcallnotification.data.model.IncomingGroupCallNotification1RowModel"/>
+    </data>
+    <LinearLayout android:gravity="end" android:id="@+id/linearGroup"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:id="@+id/linearGroup267"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <LinearLayout android:id="@+id/linearGroup266"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_weight="0.82" android:layout_width="0dp" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageAvatar"
+                    android:layout_height="@dimen/_57pxh"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_width="@dimen/_57pxh"
+                    android:scaleType="fitXY" circular="@{true}"
+                    imageRes="@{@drawable/img_avatar}" tools:src="@drawable/img_avatar"/>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearLayout"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_21pxv"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_weight="0.77"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtBufordMadDog"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{incomingGroupCallNotification1RowModel.txtBufordMadDog}"
+                        style="@style/txtRobotomedium16" tools:text="@string/msg_buford_mad_dog"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtYouChickenMc"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{incomingGroupCallNotification1RowModel.txtYouChickenMc}"
+                        style="@style/txtRobotoregular15" tools:text="@string/msg_you_chicken_mc"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txt1138AM"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_46pxv"
+                android:layout_marginEnd="@dimen/_13pxh"
+                android:layout_marginStart="@dimen/_25pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_weight="0.18" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{incomingGroupCallNotification1RowModel.txt1138AM}"
+                style="@style/txtRobotoregular13" tools:text="@string/lbl_11_38_am"/>
+        </LinearLayout>
+        <View android:background="@color/bluegray_100"
+            android:id="@+id/lineDivider"
+            android:layout_height="@dimen/_1pxv"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_9pxv" android:layout_width="@dimen/_287pxh"/>
+    </LinearLayout>
+</layout>
