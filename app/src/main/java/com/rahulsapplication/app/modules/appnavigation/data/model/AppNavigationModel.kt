@@ -20,12 +20,6 @@ public data class AppNavigationModel(
   /**
    * TODO Replace with dynamic value
    */
-  public var txt01TelegramXMainScreen: String? =
-      MyApp.getInstance().resources.getString(R.string.msg_01_telegram_x_m)
-  ,
-  /**
-   * TODO Replace with dynamic value
-   */
   public var txt02IncomingCallNotification: String? =
       MyApp.getInstance().resources.getString(R.string.msg_02_incoming_cal)
   ,

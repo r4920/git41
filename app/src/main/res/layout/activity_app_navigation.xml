@@ -48,29 +48,6 @@
                 android:layout_width="match_parent"
                 android:orientation="vertical" style="@style/groupStylewhite_A700">
                 <LinearLayout android:clickable="true"
-                    android:id="@+id/linear01TelegramXMainScreen"
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:orientation="vertical" style="@style/groupStylewhite_A700">
-                    <TextView android:ellipsize="end"
-                        android:gravity="start"
-                        android:id="@+id/txt01TelegramXMainScreen"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/_10pxv"
-                        android:layout_marginEnd="@dimen/_20pxh"
-                        android:layout_marginStart="@dimen/_20pxh"
-                        android:layout_marginTop="@dimen/_10pxv"
-                        android:layout_width="match_parent"
-                        android:singleLine="true"
-                        android:text="@{appNavigationVM.appNavigationModel.txt01TelegramXMainScreen}"
-                        style="@style/txtregular20" tools:text="@string/msg_01_telegram_x_m"/>
-                    <View android:background="@color/bluegray_401"
-                        android:id="@+id/lineLine3"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_height="@dimen/_1pxv"
-                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
-                </LinearLayout>
-                <LinearLayout android:clickable="true"
                     android:id="@+id/linear02IncomingCallNotification"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
@@ -88,7 +65,7 @@
                         android:text="@{appNavigationVM.appNavigationModel.txt02IncomingCallNotification}"
                         style="@style/txtregular20" tools:text="@string/msg_02_incoming_cal"/>
                     <View android:background="@color/bluegray_401"
-                        android:id="@+id/lineLine4"
+                        android:id="@+id/lineLine3"
                         android:layout_gravity="center_horizontal"
                         android:layout_height="@dimen/_1pxv"
                         android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
@@ -111,7 +88,7 @@
                         android:text="@{appNavigationVM.appNavigationModel.txt03IncomingCallNotification}"
                         style="@style/txtregular20" tools:text="@string/msg_03_incoming_cal"/>
                     <View android:background="@color/bluegray_401"
-                        android:id="@+id/lineLine5"
+                        android:id="@+id/lineLine4"
                         android:layout_gravity="center_horizontal"
                         android:layout_height="@dimen/_1pxv"
                         android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
@@ -134,7 +111,7 @@
                         android:text="@{appNavigationVM.appNavigationModel.txt04IncomingCallNotificationMoreThanOneProfile}"
                         style="@style/txtregular20" tools:text="@string/msg_04_incoming_cal"/>
                     <View android:background="@color/bluegray_401"
-                        android:id="@+id/lineLine6"
+                        android:id="@+id/lineLine5"
                         android:layout_gravity="center_horizontal"
                         android:layout_height="@dimen/_1pxv"
                         android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
@@ -157,7 +134,7 @@
                         android:text="@{appNavigationVM.appNavigationModel.txt05IncomingGroupCallNotification}"
                         style="@style/txtregular20" tools:text="@string/msg_05_incoming_gr"/>
                     <View android:background="@color/bluegray_401"
-                        android:id="@+id/lineLine7"
+                        android:id="@+id/lineLine6"
                         android:layout_gravity="center_horizontal"
                         android:layout_height="@dimen/_1pxv"
                         android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
@@ -180,7 +157,7 @@
                         android:text="@{appNavigationVM.appNavigationModel.txt06IncomingCallInTheMiddleOfAnotherCall}"
                         style="@style/txtregular20" tools:text="@string/msg_06_incoming_cal"/>
                     <View android:background="@color/bluegray_401"
-                        android:id="@+id/lineLine8"
+                        android:id="@+id/lineLine7"
                         android:layout_gravity="center_horizontal"
                         android:layout_height="@dimen/_1pxv"
                         android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>

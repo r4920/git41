@@ -22,8 +22,6 @@
         <activity
             android:name="com.rahulsapplication.app.modules.incomingcallnotification.ui.IncomingCallNotificationActivity" android:screenOrientation="portrait"/>
         <activity
-            android:name="com.rahulsapplication.app.modules.telegramxmainscreen.ui.TelegramXMainScreenActivity" android:screenOrientation="portrait"/>
-        <activity
             android:name="com.rahulsapplication.app.modules.incomingcallnotificationmorethanoneprofile.ui.IncomingCallNotificationMoreThanOneProfileActivity" android:screenOrientation="portrait"/>
         <activity
             android:name="com.rahulsapplication.app.modules.incominggroupcallnotification.ui.IncomingGroupCallNotificationActivity" android:screenOrientation="portrait"/>

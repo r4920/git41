@@ -65,14 +65,14 @@
     <style name="txtRobotoregular15" parent="txtRobotoregular12">
         <item name="android:textSize">@dimen/_15pxh</item>
     </style>
-    <style name="txtRobotomedium14_1" parent="txtRobotomedium14">
-        <item name="android:textColor">@color/teal_50</item>
-    </style>
     <style name="txtRobotoregular12">
         <item name="android:textSize">@dimen/_12pxh</item>
         <item name="android:textColor">@color/bluegray_400</item>
         <item name="android:fontFamily">@font/roboto</item>
         <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="txtRobotomedium14_1" parent="txtRobotomedium14">
+        <item name="android:textColor">@color/teal_50</item>
     </style>
     <style name="txtRobotoregular13" parent="txtRobotoregular12">
         <item name="android:textSize">@dimen/_13pxh</item>

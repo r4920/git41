@@ -20,10 +20,9 @@ tomorrow...</string>
 <string name="lbl_maybe">Maybe...</string>
 <string name="msg_03_incoming_cal">03 Incoming Call Notification</string>
 <string name="msg_robert_lee_zeme">Robert Lee Zemeckis</string>
-<string name="msg_01_telegram_x_m">01 Telegram X Main Screen</string>
 <string name="lbl_emmett_brown">Emmett Brown</string>
-<string name="lbl_okay">Okay</string>
 <string name="msg_telegram_voice">Telegram voice call</string>
+<string name="lbl_okay">Okay</string>
 <string name="msg_02_incoming_cal">02 Incoming Call Notification</string>
 <string name="msg_buford_mad_dog">Buford «Mad Dog» Tannen</string>
 <string name="lbl_0_01">0:01</string>
