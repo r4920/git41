@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">rahul_s_application10</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="lbl_11_38_am">11:38 AM</string>
+<string name="msg_tomorrow_every">Tomorrow, everything
+tomorrow...</string>
+<string name="lbl_thu">Thu</string>
+<string name="lbl_open_chat">Open chat</string>
+<string name="lbl_1">1</string>
+<string name="msg_can_t_talk_now">Can\u2019t talk now. Call back later.</string>
+<string name="lbl_2">2</string>
+<string name="msg_yes_it_happened">Yes it happened.</string>
+<string name="msg_steven_spielber">Steven Spielberg</string>
+<string name="msg_you_chicken_mc">You chicken, McFly!</string>
+<string name="lbl_12_44_am">12:44 AM</string>
+<string name="lbl_app_navigation">App Navigation</string>
+<string name="lbl_chats">CHATS</string>
+<string name="lbl_maybe">Maybe...</string>
+<string name="msg_03_incoming_cal">03 Incoming Call Notification</string>
+<string name="msg_robert_lee_zeme">Robert Lee Zemeckis</string>
+<string name="msg_01_telegram_x_m">01 Telegram X Main Screen</string>
+<string name="lbl_emmett_brown">Emmett Brown</string>
+<string name="lbl_okay">Okay</string>
+<string name="msg_telegram_voice">Telegram voice call</string>
+<string name="msg_02_incoming_cal">02 Incoming Call Notification</string>
+<string name="msg_buford_mad_dog">Buford «Mad Dog» Tannen</string>
+<string name="lbl_0_01">0:01</string>
+<string name="lbl_may_02">May 02</string>
+<string name="msg_jesus_didn_t_t">Jesus, Didn\u2019t That Guy Ever Have Hair</string>
+<string name="msg_i_ll_call_you_l">I\u2019ll call you later.</string>
+<string name="msg_check_your_app">"Check your app's UI from the below demo screens of your app."</string>
+<string name="msg_i_will_vote_for">I will vote for you!</string>
+<string name="lbl_lorraine_baines">Lorraine Baines</string>
+<string name="msg_will_it_ever_ha">Will it ever happen</string>
+<string name="lbl_group_call">Group Call</string>
+<string name="msg_telegram_suppor">Telegram Support</string>
+<string name="lbl_jane_parker">Jane Parker</string>
+<string name="lbl_wed">Wed</string>
+<string name="msg_silence_earthl">Silence, Earthling!</string>
+<string name="msg_gerald_strickla">Gerald Strickland</string>
+<string name="msg_06_incoming_cal">06 Incoming call in the middle of another call</string>
+<string name="msg_05_incoming_gr">05 Incoming  Group Call Notification</string>
+<string name="lbl_calls">CALLS</string>
+<string name="lbl_director">Director</string>
+<string name="msg_04_incoming_cal">04 Incoming Call Notification More than one profile</string>
+<string name="lbl_goldie_wilson">Goldie Wilson</string>
+<string name="lbl_support">Support</string>
+<string name="msg_this_contact_has_no_phone_nu">This contact has no phone number</string>
+</resources>
